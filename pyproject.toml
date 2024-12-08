@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "canvas-grader"
+version = "0.1.0"
+description = "A simple program connecting 476 autograder result to the course's Canvas page"
+authors = ["Eric Yu <yuhc218@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.scripts]
+canvas_grader = "canvas_grader.cli:app"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+canvasapi = "^3.3.0"
+cyclopts = "^3.1.2"
+docx2pdf = "^0.1.8"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

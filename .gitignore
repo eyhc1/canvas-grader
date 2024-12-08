@@ -1,0 +1,5 @@
+.venv/
+token.txt
+processing/
+__pycache__/
+correct_crit.json
